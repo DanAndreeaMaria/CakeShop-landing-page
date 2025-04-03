@@ -1,4 +1,18 @@
 /*************************************/
+/* TOPNAV SECTION */
+/*************************************/
+@media (max-width: 40rem) {
+  .topnav a:hover {
+    color: #fff;
+  }
+
+  a.btn--hero:hover,
+  #myBtn:hover {
+    background-color: #477a7b;
+  }
+}
+
+/*************************************/
 /* ABOUT SECTION */
 /*************************************/
 @media (max-width: 87rem) {
