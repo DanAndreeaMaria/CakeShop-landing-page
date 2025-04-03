@@ -12,6 +12,31 @@ html {
 }
 
 /*************************************/
+/* BACK TO TOP BUTTON */
+/*************************************/
+#myBtn {
+  display: none;
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: #477a7b;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #6c9595;
+}
+
+/*************************************/
 /* TOPNAV SECTION */
 /*************************************/
 .header {
@@ -57,11 +82,25 @@ html {
   display: none;
 }
 
+.icon .material-symbols-rounded {
+  font-size: 40px;
+}
+
+.material-symbols-rounded.services {
+  color: #e4bf60;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 40em) {
   .topnav {
     display: flex;
-    justify-content: space-between; /* Ensures logo is left, menu icon is right */
+    /* Ensures logo is left, menu icon is right */
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10;
+    transition: 0.3s;
   }
 
   .topnav a:not(:first-child) {
@@ -72,28 +111,29 @@ html {
     display: block;
   }
 
-  .topnav .icon ion-icon {
-    font-size: 40px;
+  .topnav a {
+    font-size: 2.4rem;
   }
 
   .topnav.responsive {
     flex-direction: column;
     align-items: flex-start;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #5fc6bc;
+    padding: 60px 0 80px 0;
+    z-index: 20;
+    transition: 0.3s;
   }
 
-  .topnav.responsive .icon {
+  .topnav.responsive span {
     align-self: flex-end; /* Moves the icon to the right */
-    margin-right: 20px; /* Adjusts spacing */
   }
 
   .topnav.responsive a {
     display: block;
-    text-align: left;
     width: 100%;
-  }
-
-  ion-icon {
-    margin-left: 16px;
   }
 }
 
@@ -154,6 +194,7 @@ a.btn--hero:hover,
 a.btn--hero:active {
   background-color: #e4bf60;
   color: #fff;
+  transition: 0.3s;
 }
 
 /*************************************/
