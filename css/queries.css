@@ -13,6 +13,17 @@
 }
 
 /*************************************/
+/* HERO SECTION */
+/*************************************/
+@media (max-width: 44rem) {
+  a.btn {
+    max-width: 80%;
+    padding: 1.2rem 2.4rem;
+    font-size: 2rem;
+  }
+}
+
+/*************************************/
 /* ABOUT SECTION */
 /*************************************/
 @media (max-width: 87rem) {
@@ -61,7 +72,7 @@
   }
 
   .hero-logo {
-    width: 80%;
+    max-width: 80%;
     margin-top: -70px;
     padding-bottom: 50px;
     transition: 0.3s;
@@ -107,7 +118,7 @@
   }
 
   .hero-logo {
-    width: 100%;
+    max-width: 100%;
     margin-top: -70px;
     padding-bottom: 70px;
     transition: 0.3s;
@@ -152,7 +163,7 @@
   }
 
   a.btn--hero {
-    width: 200px;
+    /*max-width: 50%;*/ /*200px*/
     font-size: 2rem;
     padding: 1.2rem 2.4rem;
     transition: 0.3s;
