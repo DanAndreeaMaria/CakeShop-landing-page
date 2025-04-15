@@ -72,7 +72,7 @@
   }
 
   .hero-logo {
-    max-width: 80%;
+    width: 80%;
     margin-top: -70px;
     padding-bottom: 50px;
     transition: 0.3s;
