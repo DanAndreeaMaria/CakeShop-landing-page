@@ -44,7 +44,7 @@ html {
 }
 
 .mini-logo {
-  max-width: 100%; /*50px*/
+  max-width: 100%;
 }
 
 .topnav {
@@ -90,6 +90,47 @@ html {
   color: #e4bf60;
   font-size: 40px;
   padding-bottom: 10px;
+}
+
+.material-symbols-rounded.beverage {
+  color: #202d2d;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+/* BEVERAGES */
+.image-beverages {
+  background-image: linear-gradient(
+      0deg,
+      rgba(183, 199, 199, 0.8) 0%,
+      rgba(183, 199, 199, 0.8) 100%
+    ),
+    url("../media/Poze_prezentare/vitrina_1.png");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.beverages {
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.beverage-title {
+  font-size: 4.2rem;
+  color: #364b4b;
+  margin-bottom: 2rem;
+}
+
+li.drink {
+  list-style: none;
+  font-size: 2.4rem;
+  color: #364b4b;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 40em) {
@@ -143,10 +184,10 @@ html {
 .hero-image {
   background-image: linear-gradient(
       0deg,
-      rgba(183, 199, 199, 6) 0%,
-      rgba(183, 199, 199, 0.1472868217054264) 100%
+      rgba(183, 199, 199, 0.7) 0%,
+      rgba(183, 199, 199, 0.7) 100%
     ),
-    url("../media/hero-images/hero-bg-1.jpg");
+    url("../media/hero-images/vitrina.jpeg");
   height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -285,6 +326,58 @@ a.btn--hero:active {
 }
 
 /*************************************/
+/* RESPONSIVE IMAGE GRID */
+/*************************************/
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  -ms-flex-wrap: wrap; /* IE 10 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.column img:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 60%;
+    max-width: 60%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+/*************************************/
 /* PRICING SECTION */
 /*************************************/
 .pricing {
@@ -297,6 +390,7 @@ a.btn--hero:active {
 }
 
 .pricing-item {
+  position: relative;
   overflow: hidden;
 }
 
@@ -306,8 +400,38 @@ a.btn--hero:active {
   transition: all 0.4s;
 }
 
-.pricing-item img:hover {
-  transform: scale(1.1);
+.img-front {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pricing-item:hover .overlay {
+  opacity: 1;
+}
+
+.img-back {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .pricing-h1 {
@@ -325,27 +449,45 @@ a.btn--hero:active {
 
 .block {
   position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 30%;
+  height: 35%;
   background-color: #0f1717;
-  opacity: 70%;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  padding: 10px;
+  opacity: 0.7;
+  z-index: 0; /* Send to back */
 }
 
-.value {
+.text-block {
   position: absolute;
-  text-align: center;
-  font-size: 3.2rem;
-  font-weight: 200;
+  bottom: 0;
+  left: 0;
+  max-width: 100%; /*width*/
+  width: 100%;
+  overflow: hidden;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Bring above the block */
+}
+
+.text-block .value {
+  font-size: 2.2rem;
+  font-weight: 300;
   color: #dbe3e3;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -95%);
+  text-align: center;
   padding: 10px;
-  transition: 0.5s;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  /* font-size: 2.4rem;
+  font-weight: 400;
+  color: #dbe3e3;
+  text-align: center;
+  padding: 10px;
+  margin: 0; */
 }
 
 /*************************************/
@@ -364,10 +506,10 @@ a.btn--hero:active {
 .slider {
   height: 100%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 20px;
   overflow: hidden;
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 
 .slider::before,
