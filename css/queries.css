@@ -26,11 +26,13 @@
 /*************************************/
 /* ABOUT SECTION */
 /*************************************/
-@media (max-width: 87rem) {
+@media (max-width: 150em) {
   .about-image {
     display: none;
   }
+}
 
+@media (max-width: 87rem) {
   .grid-2-cols {
     grid-template-columns: 1fr;
   }
@@ -40,10 +42,7 @@
 /*************************************/
 @media (max-width: 90em) {
   .text-block .value {
-    font-size: 3em;
-    top: 97%;
-    transform: translate(-50%, -97%);
-    transition: 0.5s;
+    font-size: 2rem;
   }
 }
 
@@ -55,8 +54,7 @@
   }
 
   .text-block .value {
-    font-size: 3em;
-    transition: 0.5s;
+    font-size: 1.8rem;
   }
 }
 
@@ -67,8 +65,7 @@
   }
 
   .text-block .value {
-    font-size: 2.4em;
-    transition: 0.5s;
+    font-size: 1.4rem;
   }
 
   .hero-logo {
@@ -86,8 +83,7 @@
   }
 
   .text-block .value {
-    font-size: 2.2em;
-    transition: 0.5s;
+    font-size: 1.4rem;
   }
 
   .btn {
@@ -111,10 +107,7 @@
   }
 
   .text-block .value {
-    font-size: 2.8em;
-    top: 97%;
-    transform: translate(-50%, -97%);
-    transition: 0.5s;
+    font-size: 1.4rem;
   }
 
   .hero-logo {
@@ -127,10 +120,7 @@
 
 @media (max-width: 44em) {
   .text-block .value {
-    font-size: 2.4em;
-    top: 98%;
-    transform: translate(-50%, -98%);
-    transition: 0.5s;
+    font-size: 1.4rem;
   }
 
   .about-text {
@@ -147,40 +137,36 @@
   }
 
   .text-block .value {
-    font-size: 2.8em;
-    top: 98%;
-    transform: translate(-50%, -98%);
-    transition: 0.5s;
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 26em) {
   .text-block .value {
-    font-size: 2.5em;
-    top: 100%;
-    transform: translate(-50%, -100%);
-    transition: 0.5s;
+    font-size: 1.4rem;
   }
 
   a.btn--hero {
-    /*max-width: 50%;*/ /*200px*/
     font-size: 2rem;
     padding: 1.2rem 2.4rem;
     transition: 0.3s;
   }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 23em) {
   .pricing {
     grid-template-columns: 1fr;
     transition: 0.5s;
   }
 
   .text-block .value {
-    font-size: 2.4em;
-    top: 94%;
-    transform: translate(-50%, -94%);
-    transition: 0.5s;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .text-block .value {
+    font-size: 1.4rem;
   }
 }
 
