@@ -48,3 +48,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Switch between languages
+function changeLanguage(lang) {
+  if (lang === "ro") {
+    window.location.href = "/";
+  } else if (lang === "en") {
+    window.location.href = "../english/";
+  }
+}
