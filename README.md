@@ -48,7 +48,7 @@ The website is available in both **Romanian** and **English**, with an easy-to-u
 - **HTML5**
 - **CSS3 (including Grid & Media Queries)**
 - **JavaScript**
-- **Google Maps EMbed API**
+- **Google Maps Embed API**
 - **SEO best practices**
 
 ## 📷 Credits
