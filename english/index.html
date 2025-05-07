@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sweet 3 Generation offers delicious artisanal cakes, custom desserts, and pastries for all occasions, including weddings and birthdays."
+    />
+    <meta
+      name="keywords"
+      content="artisan cakes, wedding cakes, custom desserts, birthday cakes, pastries, coffee, beverages, vegan cakes, cake bar, egg noodles"
+    />
+    <meta name="author" content="Sweet 3 Generation" />
+
+    <!-- for cache memory -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Sweet3Generation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/style.css?v=1.2" />
+    <link rel="stylesheet" href="../css/queries.css?v=1.2" />
+
+    <!-- Favicon image -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../favicon_io/android-chrome-192x192.png"
+    />
+
+    <!-- Font awesome icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="banner">
+        <i class="fa-solid fa-ice-cream"></i> Coming soon artisanal ice cream
+        <i class="fa-solid fa-ice-cream"></i>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a
+          ><img
+            class="mini-logo"
+            src="../media/hero-images/cake-shop-logo-no-bg.png"
+            alt="Sweet3Generation logo"
+        /></a>
+        <h1 class="orar">
+          Monday - Sunday <br />
+          10 - 19
+        </h1>
+
+        <a
+          href="#despre_noi"
+          onclick="scrollToSection('despre_noi'); return false;"
+          >About us</a
+        >
+        <a href="#servicii" onclick="scrollToSection('servicii'); return false;"
+          >Services</a
+        >
+        <a href="#preturi" onclick="scrollToSection('preturi'); return false;"
+          >Prices</a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          ><span class="material-symbols-rounded">menu</span></a
+        >
+      </div>
+    </header>
+
+    <!-- Go back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--  -->
+
+    <main>
+      <div class="hero-image">
+        <button class="language" onclick="changeLanguage('ro')">RO</button>
+        <button class="language" onclick="changeLanguage('en')">EN</button>
+        <div class="hero-logo-btn">
+          <img
+            class="hero-logo"
+            src="../media/hero-images/cake-shop-logo-no-bg.png"
+            alt="Sweet3Generation logo"
+          />
+          <a
+            class="btn btn--hero"
+            href="#despre_noi"
+            onclick="scrollToSection('despre_noi'); return false;"
+            >Learn more</a
+          >
+        </div>
+      </div>
+
+      <section class="section-about" id="despre_noi">
+        <div class="about grid">
+          <div class="about-text">
+            <h1 class="about-h1">About us</h1>
+            <p class="about-p">
+              “Sweet 3 Generation”: the name itself is a story. Three
+              generations united by a passion for sweets, memories intertwined
+              with flavors and dreams fulfilled. In the heart of the city of
+              Deva, the boutique confectionery opens like a hidden treasure.
+              Here, each cake has a story. Mom, with her skillful hands, shapes
+              each layer of cream, and my son, with his big and curious eyes,
+              watches each movement with fascination. Together, we create sweets
+              that are not only delicious, but also full of emotion! Sweet 3
+              Generation is not just a business. It is a journey through time,
+              where the tastes of childhood are intertwined with the passion to
+              create something special. Every cake, every cookie, every macaron
+              is a piece of our soul. And when the door of the confectionery
+              opens, we feel like we are welcoming guests into our home. Guests
+              who come to share the joy of a slice of cake or to celebrate
+              important moments. Here, every smile counts, every story is
+              precious. With an open heart and sweet smiles, we invite you, dear
+              community from Deva, to step into our door at Sweet 3 Generation.
+              Here, every cake is a story, and every snack brings a drop of joy
+              into our lives and into your souls.
+            </p>
+          </div>
+
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/amandine_1.png"
+                  alt="Chocolate glazed amandine"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/pavlova_2.png"
+                  alt="Decorated pavlova with forest fruit"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/tava_desert.png"
+                  alt="Choux a la creme and mini fruit tarts"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/torturi_800x800/tort_mascarpone_fistic_zmeura.png"
+                  alt="Mascarpone, raspberry and pistachio cake"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/fursecuri_800x800/biscotti_1.png"
+                  alt="Biscotti with nuts and dried fruit"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/cozonaci_800x800/cozonaci_4.png"
+                  alt="Fluffy cozonac"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/tiramisu_3.png"
+                  alt="Tiramisu with mascarpone, coffee and cocoa"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/mini_3_ciocolate_4.png"
+                  alt="Three chocolates mini cake"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/fursecuri_800x800/fursecuri_fragede_1.png"
+                  alt="Cookies"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/mon_plus_ultra_1.png"
+                  alt="Non plus ultra"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/krantz_2.png"
+                  alt="Kranț cake"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/mini_fructe_1.png"
+                  alt="Vegan cheesecake"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/torturi_800x800/tort_alune_3.png"
+                  alt="Chocolate cake"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/fursecuri_800x800/covrigei_3.png"
+                  alt="Salted pretzels"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/fursecuri_800x800/cornulete_post_2.png"
+                  alt="Vegan cookies with plum jam filling"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/cozonaci_800x800/cozonaci_4.png"
+                  alt="Fluffy cozonac"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/cremes_1.png"
+                  alt="Cremeș vanilla custard"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/prajituri_800x800/rulou_fructe_nuci_2.png"
+                  alt="Dried fruit and nuts roll"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  class="img-slider"
+                  src="../media/fursecuri_800x800/fursecuri_fragede_3.png"
+                  alt="Cookies"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicii" class="section-services">
+        <h1 class="services-h1">Services</h1>
+        <div class="container grid grid-4-cols">
+          <div class="services">
+            <span class="material-symbols-rounded services">cake</span>
+            <p class="services-title">Anniversaries</p>
+            <p class="services-text">
+              Personalized cakes for all ages, full of flavor and lots of
+              quality ingredients, made exactly how they should be.
+            </p>
+          </div>
+          <div class="services">
+            <span class="material-symbols-rounded services">diamond</span>
+            <p class="services-title">Weddings</p>
+            <p class="services-text">
+              For the most important day of your life, we create spectacular
+              wedding cakes that will nourish your taste buds.
+            </p>
+          </div>
+          <div class="services">
+            <span class="material-symbols-rounded services">celebration</span>
+            <p class="services-title">Parties</p>
+            <p class="services-text">
+              Creative desserts for any occasion: candy bars, cakes, cupcakes
+              and eye-catching sweets.
+            </p>
+          </div>
+          <div class="services">
+            <span class="material-symbols-rounded services">storefront</span>
+            <p class="services-title">Shop</p>
+            <p class="services-text">
+              Every day we are expecting you with fresh sweets and cakes, family
+              recipes and a warm welcome.
+            </p>
+          </div>
+        </div>
+
+        <div class="observation">
+          <i class="fa-solid fa-asterisk"></i> We offer discounts for baptisms,
+          weddings, birthdays, anniversaries, depending on the orders received
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+
+        <!-- Responsive grid image -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="../media/Poze_prezentare/cake_bar_2_edited.jpeg"
+              alt="Mini tarts cake bar"
+            />
+            <img
+              src="../media/Poze_prezentare/platou_mix_edited.jpeg"
+              alt="Plateau with cozonac slices and cookies"
+            />
+            <img
+              src="../media/torturi_800x800/tort_fluturi.png"
+              alt="Custom-made two-tier cake with frosting and decorations"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              src="../media/Poze_prezentare/tort_mascarpone_paste_1.png"
+              alt="Custom Easter cake with mascarpone and raspberries"
+            />
+            <img
+              src="../media/Poze_prezentare/preturi_bauturi.jpeg"
+              alt="Prices of drinks served in the coffee shop"
+            />
+            <img
+              src="../media/torturi_800x800/tort_rosu.png"
+              alt="Custom cake with red frosting"
+            />
+            <img
+              src="../media/torturi_800x800/tort_fluturi_albastru.png"
+              alt="Custom birthday cake with blue butterflies"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              src="../media/Poze_prezentare/tort_alune_edited.jpeg"
+              alt="Custom chocolate birthday cake"
+            />
+            <img
+              src="../media/Poze_prezentare/platou_briose_edited.png"
+              alt="Graduation themed cupcakes"
+            />
+            <img
+              src="../media/torturi_800x800/tort_inimioare.png"
+              alt="Raspberry and pistachio cake with heart decorations"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="preturi" class="section-pricing">
+        <h1 class="pricing-h1">Prices</h1>
+        <div class="pricing">
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                class="img-front"
+                src="../media/prajituri_800x800/mini_fructe_1.png"
+                alt="Vegan cheesecake with fruit topping"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/mini_fructe_2.png"
+                  alt="Vegan cheesecake with fruit topping"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Vegan cheesecake <br />
+                20 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                class="img-front"
+                src="../media/prajituri_800x800/mon_plus_ultra_1.png"
+                alt="Non plus ultra"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/mon_plus_ultra_2.png"
+                  alt="Non plus ultra"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Non plus ultra <br />
+                120 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/mini_3_ciocolate_1.png"
+                alt="Mini cake with three types of chocolate, white, milk and dark"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/mini_3_ciocolate_2.png"
+                  alt="Mini cake with three types of chocolate, white, milk and dark"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Mini 3 chocolates <br />
+                18 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/amandine_1.png"
+                alt="Chocolate glazed amandine"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/amandine_2.png"
+                  alt="Chocolate glazed amandine"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Amandine <br />
+                14 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/cremes_1.png"
+                alt="Cremeș with vanilla custard"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/cremes_2.png"
+                  alt="Cremeș with vanilla custard"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Cremeș <br />
+                110 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/cabana_1.png"
+                alt="Cottage cake with chocolate and vanilla"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/cabana_3.jpeg"
+                  alt="Cottage cake with chocolate and vanilla"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Cottage <br />
+                135 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/tiramisu_1.png"
+                alt="Tiramisu with mascarpone, coffee and cocoa"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/tiramisu_2.png"
+                  alt="Tiramisu with mascarpone, coffee and cocoa"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Tiramisu <br />
+                15 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/krantz_1.png"
+                alt="Kranț cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/krantz_2.png"
+                  alt="Kranț cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Kranț <br />
+                135 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/pavlova_1.png"
+                alt="Decorated pavlova with forest fruit"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/pavlova_2.png"
+                  alt="Decorated pavlova with forest fruit"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Pavlova <br />
+                15 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/prajituri_asortate_1.png"
+                alt="Assorted cakes"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/prajituri_asortate_2.png"
+                  alt="Assorted cakes"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Assorted cakes <br />
+                120 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/choux_a_la_creme_1.jpeg.png"
+                alt="Choux a la creme with vanilla or chocolate custard"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/choux_a_la_creme_2.png"
+                  alt="Choux a la creme with vanilla or chocolate custard"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Choux à la Crème <br />
+                16 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/mini_tarte_fructe_1.jpeg"
+                alt="Mini fruit tarts with vanilla custard"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/mini_tarte_fructe_2.jpeg"
+                  alt="Mini fruit tarts with vanilla custard"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Mini fruit tarts <br />
+                9 lei/pc
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/tarte_portugheze.png"
+                alt="Portugese tarts"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/tarte_portugheze_2.jpg"
+                  alt="Portugese tarts"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Portugese tarts <br />12 lei/pc</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/biscotti_1.png"
+                alt="Biscotti with almonds and dried fruit"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/biscotti_3.png"
+                  alt="Biscotti with almonds and dried fruit"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Biscotti with almonds <br />110 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/cornulete_post_2.png"
+                alt="Vegan cookies with plum jam filling"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/cornulete_post_1.png"
+                  alt="Vegan cookies with plum jam filling"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Vegan cookies filled with plum jam <br />90 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/cornulete_salon_1.png"
+                alt="Walnut-filled crescent cookies"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/cornulete_salon_2.png"
+                  alt="Walnut-filled crescent cookies"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Walnut-filled crescent cookies <br />110 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/fursecuri_fragede_2.png"
+                alt="Cookies"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/fursecuri_fragede_3.png"
+                  alt="Cookies"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Cookies <br />100 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/covrigei_3.png"
+                alt="Salted pretzels"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/covrigei_2.png"
+                  alt="Salted pretzels"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Pretzels <br />100 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/fursecuri_800x800/saleuri_1.jpeg"
+                alt="Pastries"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/fursecuri_800x800/saleuri_2.jpg"
+                  alt="Pastries"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Pastries <br />125 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/taitei/taitei_2.png"
+                alt="Packed egg noodles"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/taitei/taitei_3.png"
+                  alt="Packed egg noodles"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Egg noodles <br />12 lei/bag</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/prajituri_800x800/rulou_fructe_nuci_2.png"
+                alt="Dried fruit and nuts bar"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/prajituri_800x800/rulou_fructe_nuci_1.png"
+                  alt="Dried fruit and nuts bar"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Dried fruit and nuts bar <br />100 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/cozonaci_800x800/cozonaci_1.png"
+                alt="Fluffy cozonac"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/cozonaci_800x800/cozonaci_4.png"
+                  alt="Fluffy cozonac"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Cozonac <br />100 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/torturi_800x800/tort_caramel_2.png"
+                alt="Mascarpone and salted caramel cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/torturi_800x800/caramel_sarat.png"
+                  alt="Mascarpone and salted caramel cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Mascarpone and salted caramel cake <br />135 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/torturi_800x800/tort_lucas_1.png"
+                alt="Lucas cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/torturi_800x800/tort_lucas_2.png"
+                  alt="Lucas cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Lucas cake <br />135 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/torturi_800x800/tort_alune_1.png"
+                alt="Chocolate and hazelnuts cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/torturi_800x800/tort_alune_5.png"
+                  alt="Chocolate and hazelnuts cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Chocolate cake <br />150 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/torturi_800x800/tort_mascarpone_zmeura_4.png"
+                alt="Mascarpone, raspberry and pistachio cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/torturi_800x800/tort_mascarpone_fistic_zmeura.png"
+                  alt="Mascarpone, raspberry and pistachio cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">
+                Mascarpone, pistachio and raspberry cake <br />150 lei/kg
+              </p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="../media/torturi_800x800/tort_dobos_2.png"
+                alt="Doboș cake"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="../media/torturi_800x800/tort_dobos_4.jpg"
+                  alt="Doboș cake"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Doboș cake <br />160 lei/kg</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="beverages image-beverages">
+          <span class="material-symbols-rounded beverage">
+            emoji_food_beverage
+          </span>
+          <div class="beverage">
+            <h1 class="beverage-title">Beverages</h1>
+            <li class="drink">Espresso ............... 9 lei</li>
+            <li class="drink">Cappuccino ...... 13 lei</li>
+            <li class="drink">Caffe Latte ......... 15 lei</li>
+            <li class="drink">Fresh ...................... 15 lei</li>
+            <li class="drink">Warm tea ............ 10 lei</li>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-section-grid">
+          <div class="footer-img">
+            <img
+              class="logo"
+              src="../media/hero-images/cake-shop-logo.png"
+              alt="Sweet3Generation logo"
+            />
+          </div>
+          <div class="links">
+            <ul class="links-list">
+              <li>
+                <a class="link-style" href="tel: +40758 271 547"
+                  ><i class="fa-solid fa-phone"></i> Contact &ndash; 0758 271
+                  547</a
+                >
+              </li>
+              <li>You can find us on socials:</li>
+              <li>
+                <a
+                  class="link-style"
+                  href="https://www.facebook.com/profile.php?id=61556925736035"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-style"
+                  href="https://www.instagram.com/sweet3gen/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="address">
+            <ul class="links-list">
+              <li>Find us here:</li>
+              <li><i class="fa-solid fa-location-dot"></i> Deva, Hunedoara</li>
+              <li>Strada Mihai Eminescu, 7</li>
+            </ul>
+          </div>
+          <div class="map">
+            <iframe
+              title="SWeet3Generation location"
+              class="g-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.5759448786516!2d22.897301676558243!3d45.87979300561334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ef28e7af8da67%3A0x94b0b8e6fb0c06ad!2sStrada%20Mihai%20Eminescu%207%2C%20Deva%20330033!5e0!3m2!1sen!2sro!4v1741096345033!5m2!1sen!2sro"
+              width="500"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </footer>
+      <h3 class="signature">
+        Webpage created by
+        <a
+          class="creator-link"
+          href="https://www.linkedin.com/in/andreea-maria-dan/"
+          target="_blank"
+          >Andreea Dan</a
+        >
+      </h3>
+    </main>
+
+    <script src="../script.js?v=1.2"></script>
+    <!-- Sections navigation - to remove #from link -->
+    <script>
+      function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
