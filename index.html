@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sweet3Generation is a landing page for a local sweets shop. It contains business information, product description, prices and location."
+      content="Sweet 3 Generation - oferă torturi artizanale delicioase, deserturi la comandă și produse de patiserie pentru orice ocazie, inclusiv nunți și aniversări."
     />
+    <meta
+      name="keywords"
+      content="prăjituri, prăjituri artizanale, băuturi proaspete, torturi, torturi la comandă, torturi de nuntă, torturi aniversare, deserturi vegane, cake bar, fursecuri, saleuri, tăiței"
+    />
+    <meta name="author" content="Sweet 3 Generation" />
+
+    <!-- for cache memory -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <title>Sweet3Generation</title>
 
     <!-- Google Fonts -->
@@ -18,8 +32,8 @@
     />
 
     <!-- CSS link -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/style.css?v=1.2" />
+    <link rel="stylesheet" href="css/queries.css?v=1.2" />
 
     <!-- Favicon image -->
     <link
@@ -42,16 +56,30 @@
   </head>
   <body>
     <header class="header">
+      <div class="banner">
+        <i class="fa-solid fa-ice-cream"></i> În curând înghețată artizanală
+        <i class="fa-solid fa-ice-cream"></i>
+      </div>
       <div class="topnav" id="myTopnav">
-        <a href="#hero"
+        <a
           ><img
             class="mini-logo"
             src="media/hero-images/cake-shop-logo-no-bg.png"
             alt="Sweet3Generation logo"
         /></a>
-        <a href="#about">Despre noi</a>
-        <a href="#services">Servicii</a>
-        <a href="#pricing">Prețuri</a>
+        <h1 class="orar">
+          Luni - Duminică <br />
+          10 - 19
+        </h1>
+        <a
+          href="#despre_noi"
+          onclick="scrollToSection('despre_noi'); return false;"
+          >Despre noi</a
+        >
+        <a href="#servicii" onclick="scrollToSection('servicii'); return false;"
+          >Servicii</a
+        >
+        <a href="#preturi" onclick="scrollToTop">Prețuri</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"
           ><span class="material-symbols-rounded">menu</span></a
         >
@@ -64,17 +92,25 @@
 
     <main>
       <div class="hero-image">
+        <button class="language" onclick="changeLanguage('ro');">RO</button>
+        <button class="language" onclick="changeLanguage('en');">EN</button>
+
         <div class="hero-logo-btn">
           <img
             class="hero-logo"
             src="media/hero-images/cake-shop-logo-no-bg.png"
             alt="Sweet3Generation logo"
           />
-          <a class="btn btn--hero" href="#about">Află mai multe</a>
+          <a
+            class="btn btn--hero"
+            href="#despre_noi"
+            onclick="scrollToSection('despre_noi'); return false;"
+            >Află mai multe</a
+          >
         </div>
       </div>
 
-      <section class="section-about" id="about">
+      <section class="section-about" id="despre_noi">
         <div class="about grid">
           <div class="about-text">
             <h1 class="about-h1">Despre noi</h1>
@@ -108,133 +144,133 @@
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/amandine_1.png"
-                  alt="Amandine pe platou"
+                  alt="Amandine cu glazură de ciocolată"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/pavlova_2.png"
-                  alt="Prajitura pavlova"
+                  alt="Pavlova decorată cu fructe de pădure"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/tava_desert.png"
-                  alt="Platou cu mini tarte"
+                  alt="Platou cu mini tarte cu fructe și choux a la creme"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/torturi_800x800/tort_mascarpone_fistic_zmeura.png"
-                  alt="Tort cu mascarpone zmeura si fistic"
+                  alt="Tort cu cremă de mascarpone, zmeura si fistic"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/fursecuri_800x800/biscotti_1.png"
-                  alt="Platou cu biscotti"
+                  alt="Biscotti cu nuci și fructe confiate"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/cozonaci_800x800/cozonaci_4.png"
-                  alt="Cozonaci pufosi"
+                  alt="Cozonaci pufoși"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/tiramisu_3.png"
-                  alt="Tiramisu la pahar"
+                  alt="Tiramisu la pahar cu mascarpone, cafea și cacao"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/mini_3_ciocolate_4.png"
-                  alt="Mini prajitura cu trei tipuri de ciocolata"
+                  alt="Mini prajitura cu trei tipuri de ciocolată, albă, cu lapte și amăruie"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/fursecuri_800x800/fursecuri_fragede_1.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Fursecuri fragede"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/mon_plus_ultra_1.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Non plus ultra"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/krantz_2.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Bucățele din prăjitura Kranț"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/mini_fructe_1.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Cheesecake vegan"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/torturi_800x800/tort_alune_3.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Tort de ciocolată"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/fursecuri_800x800/covrigei_3.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Covrigei sărați"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/fursecuri_800x800/cornulete_post_2.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Cornulețe de post cu umplutură de magiun"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/cozonaci_800x800/cozonaci_4.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Cozonaci pufoși"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/cremes_1.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Cremeș cu cremă de lapte și vanilie"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/prajituri_800x800/rulou_fructe_nuci_2.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Rulouri din fructe uscate și nuci"
                 />
               </div>
               <div class="slide">
                 <img
                   class="img-slider"
                   src="media/fursecuri_800x800/fursecuri_fragede_3.png"
-                  alt="beautifully arranged sweets plateau"
+                  alt="Fursecuri fragede"
                 />
               </div>
             </div>
@@ -242,41 +278,47 @@
         </div>
       </section>
 
-      <section id="services" class="section-services">
+      <section id="servicii" class="section-services">
         <h1 class="services-h1">Servicii</h1>
         <div class="container grid grid-4-cols">
           <div class="services">
             <span class="material-symbols-rounded services">cake</span>
             <p class="services-title">Aniversări</p>
             <p class="services-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit magni
-              delectus dicta ipsum totam et tenetur officia.
+              Torturi personalizate pentru toate vârstele, pline de gust,
+              culoare și multă bucurie, exact cum vi le doriți.
             </p>
           </div>
           <div class="services">
             <span class="material-symbols-rounded services">diamond</span>
             <p class="services-title">Nunți</p>
             <p class="services-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit magni
-              delectus dicta ipsum totam et tenetur officia.
+              Pentru cea mai importantă zi din viața voastră, creăm torturi de
+              nuntă spectaculoase, plus un discount.
             </p>
           </div>
           <div class="services">
             <span class="material-symbols-rounded services">celebration</span>
             <p class="services-title">Petreceri</p>
             <p class="services-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit magni
-              delectus dicta ipsum totam et tenetur officia.
+              Deserturi creative pentru orice ocazie: candy baruri, prăjituri,
+              cupcakes și torturi care fură privirile.
             </p>
           </div>
           <div class="services">
             <span class="material-symbols-rounded services">storefront</span>
             <p class="services-title">Magazin</p>
             <p class="services-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit magni
-              delectus dicta ipsum totam et tenetur officia.
+              Zilnic regăsiți în vitrină prăjituri proaspete, rețete de familie
+              și gusturi care amintesc de copilărie.
             </p>
           </div>
+        </div>
+
+        <div class="observation">
+          <i class="fa-solid fa-asterisk"></i> Oferim discounturi la botezuri,
+          nunți, majorate, aniversări, în funcție de comenzile primite
+          <i class="fa-solid fa-asterisk"></i>
         </div>
 
         <!-- Responsive grid image -->
@@ -284,39 +326,55 @@
           <div class="column">
             <img
               src="media/Poze_prezentare/cake_bar_2_edited.jpeg"
-              alt="Cake bar cu mini tarte diverse"
+              alt="Cake bar cu mini tarte"
             />
             <img
               src="media/Poze_prezentare/platou_mix_edited.jpeg"
               alt="Platou cu felii de cozonac si fursecuri cu nuci"
+            />
+            <img
+              src="media/torturi_800x800/tort_fluturi.png"
+              alt="Tort la comandă cu doua etaje si glazura cu decorațiuni"
             />
           </div>
 
           <div class="column">
             <img
               src="media/Poze_prezentare/tort_mascarpone_paste_1.png"
-              alt="Tort de Paște cu mascarpone si zmeura"
+              alt="Tort la comandă de Paște cu mascarpone si zmeura"
             />
             <img
               src="media/Poze_prezentare/preturi_bauturi.jpeg"
-              alt="Panou cu preturi bauturi servite in cofetarie"
+              alt="Panou cu prețurile băuturilor servite în cofetarie"
+            />
+            <img
+              src="media/torturi_800x800/tort_rosu.png"
+              alt="Tort la comandă cu glazură roșie"
+            />
+            <img
+              src="media/torturi_800x800/tort_fluturi_albastru.png"
+              alt="Tort aniversar la comandă cu fluturi albaștri"
             />
           </div>
 
           <div class="column">
             <img
               src="media/Poze_prezentare/tort_alune_edited.jpeg"
-              alt="Tort aniversar cu alune si ciocolata"
+              alt="Tort aniversar la comandă cu alune și ciocolată"
             />
             <img
-              src="media/Poze_prezentare/platou_briose_edited.jpeg"
-              alt="Platou cu briose cu tematica de absolvire"
+              src="media/Poze_prezentare/platou_briose_edited.png"
+              alt="Platou brioșe cu tematică de absolvire"
+            />
+            <img
+              src="media/torturi_800x800/tort_inimioare.png"
+              alt="Tort cu zmeură și fistic cu decorațiuni de inimioare"
             />
           </div>
         </div>
       </section>
 
-      <section id="pricing" class="section-pricing">
+      <section id="preturi" class="section-pricing">
         <h1 class="pricing-h1">Prețuri</h1>
         <div class="pricing">
           <div class="figure-container">
@@ -324,21 +382,21 @@
               <img
                 class="img-front"
                 src="media/prajituri_800x800/mini_fructe_1.png"
-                alt="Mini prajitura cu crema de vanilie si topping cu fructe"
+                alt="Cheesecake vegan cu topping de fructe"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/mini_fructe_2.png"
-                  alt="Mini tarta cu crema de vanilie si topping cu fructe"
+                  alt="Cheesecake vegan cu topping de fructe"
                 />
               </div>
             </figure>
             <div class="block"></div>
             <div class="text-block">
               <p class="value">
-                Tartă cremă vanilie <br />
-                14 lei/2 buc
+                Cheesecake vegan <br />
+                20 lei/buc
               </p>
             </div>
           </div>
@@ -348,13 +406,13 @@
               <img
                 class="img-front"
                 src="media/prajituri_800x800/mon_plus_ultra_1.png"
-                alt="Prajitura non plus ultra"
+                alt="Non plus ultra"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/mon_plus_ultra_2.png"
-                  alt="Prajitura non plus ultra"
+                  alt="Non plus ultra"
                 />
               </div>
             </figure>
@@ -362,7 +420,7 @@
             <div class="text-block">
               <p class="value">
                 Non plus ultra <br />
-                100 lei/kg
+                120 lei/kg
               </p>
             </div>
           </div>
@@ -371,13 +429,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/mini_3_ciocolate_1.png"
-                alt="Mini prajitura trei ciocolate"
+                alt="Mini prăjitură cu trei tipuri de ciocolată, albă, cu lapte și amăruie"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/mini_3_ciocolate_2.png"
-                  alt="Mini prajitura trei ciocolate"
+                  alt="Mini prăjitură cu trei tipuri de ciocolată, albă, cu lapte și amăruie"
                 />
               </div>
             </figure>
@@ -394,13 +452,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/amandine_1.png"
-                alt="Amandine asezate pe farfurie"
+                alt="Amandine cu glazură de ciocolată"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/amandine_2.png"
-                  alt="Amandine asezate pe farfurie"
+                  alt="Amandine cu glazură de ciocolată"
                 />
               </div>
             </figure>
@@ -417,13 +475,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/cremes_1.png"
-                alt="Bucati de cremes asezate pe farfurie"
+                alt="Cremeș cu cremă de lapte și vanilie"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/cremes_2.png"
-                  alt="Cremes asezat pe farfurie"
+                  alt="Cremeș cu cremă de lapte și vanilie"
                 />
               </div>
             </figure>
@@ -440,13 +498,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/cabana_1.png"
-                alt="Prajitura cabana cu ciocolata si vanilie"
+                alt="Prajitură căbănuță cu ciocolată și vanilie"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/cabana_3.jpeg"
-                  alt="Prajitura cabana cu ciocolata si vanilie"
+                  alt="Prajitură căbănuță cu ciocolată și vanilie"
                 />
               </div>
             </figure>
@@ -463,13 +521,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/tiramisu_1.png"
-                alt="Tiramisu la pahar cu cacao si cafea"
+                alt="Tiramisu la pahar cu mascarpone, cacao si cafea"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/tiramisu_2.png"
-                  alt="Tiramisu la pahar cu cacao si cafea"
+                  alt="Tiramisu la pahar cu mascarpone, cacao si cafea"
                 />
               </div>
             </figure>
@@ -477,7 +535,7 @@
             <div class="text-block">
               <p class="value">
                 Tiramisu <br />
-                13 lei/buc
+                15 lei/buc
               </p>
             </div>
           </div>
@@ -486,13 +544,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/krantz_1.png"
-                alt="Prajitura krant"
+                alt="Prajitura kranț"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/krantz_2.png"
-                  alt="Prajitura krant"
+                  alt="Prajitura kranț"
                 />
               </div>
             </figure>
@@ -500,7 +558,7 @@
             <div class="text-block">
               <p class="value">
                 Kranț <br />
-                X lei/kg
+                135 lei/kg
               </p>
             </div>
           </div>
@@ -509,13 +567,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/pavlova_1.png"
-                alt="Prajitura pavlova cu fructe deasupra"
+                alt="Pavlova cu decorațiune cu fructe de pădure"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/pavlova_2.png"
-                  alt="Prajitura pavlova cu fructe deasupra"
+                  alt="Pavlova cu decorațiune cu fructe de pădure"
                 />
               </div>
             </figure>
@@ -523,7 +581,7 @@
             <div class="text-block">
               <p class="value">
                 Pavlova <br />
-                13 lei/buc
+                15 lei/buc
               </p>
             </div>
           </div>
@@ -532,13 +590,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/prajituri_asortate_1.png"
-                alt="Caserola cu prajituri asortate"
+                alt="Caserolă cu prajituri asortate"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/prajituri_asortate_2.png"
-                  alt="Caserola cu prajituri asortate"
+                  alt="Caserolă cu prajituri asortate"
                 />
               </div>
             </figure>
@@ -555,13 +613,13 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/choux_a_la_creme_1.jpeg.png"
-                alt="Prajitura choux a la creme asezate pe tava"
+                alt="Choux a la creme cu cremă de vanilie sau ciocolată"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/choux_a_la_creme_2.png"
-                  alt="Prajitura choux a la creme asezate pe tava"
+                  alt="Choux a la creme cu cremă de vanilie sau ciocolată"
                 />
               </div>
             </figure>
@@ -601,19 +659,19 @@
             <figure class="pricing-item">
               <img
                 src="media/prajituri_800x800/tarte_portugheze.png"
-                alt="Mini tarte portugheze asezate pe platou"
+                alt="Tarte portugheze"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/prajituri_800x800/tarte_portugheze_2.jpg"
-                  alt="Mini tarte portugheze asezate pe platou"
+                  alt="Tarte portugheze"
                 />
               </div>
             </figure>
             <div class="block"></div>
             <div class="text-block">
-              <p class="value">Mini tarte portugheze <br />130 lei/kg</p>
+              <p class="value">Tarte portugheze <br />12 lei/buc</p>
             </div>
           </div>
 
@@ -621,13 +679,13 @@
             <figure class="pricing-item">
               <img
                 src="media/fursecuri_800x800/biscotti_1.png"
-                alt="Platou cu biscotti cu migdale"
+                alt="Biscotti cu migdale și fructe uscate"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/fursecuri_800x800/biscotti_3.png"
-                  alt="Platou cu biscotti cu migdale"
+                  alt="Biscotti cu migdale și fructe uscatee"
                 />
               </div>
             </figure>
@@ -641,13 +699,13 @@
             <figure class="pricing-item">
               <img
                 src="media/fursecuri_800x800/cornulete_post_2.png"
-                alt="Cornulete de post cu magiun de prune"
+                alt="Cornulețe de post cu umplutură de magiun de prune"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/fursecuri_800x800/cornulete_post_1.png"
-                  alt="Cornulete de post cu magiun de prune"
+                  alt="Cornulețe de post cu umplutură de magiun de prune"
                 />
               </div>
             </figure>
@@ -661,13 +719,13 @@
             <figure class="pricing-item">
               <img
                 src="media/fursecuri_800x800/cornulete_salon_1.png"
-                alt="Platou cu cornulete de salon"
+                alt="Cornulete de salon cu nucă"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/fursecuri_800x800/cornulete_salon_2.png"
-                  alt="Platou cu cornulete de salon"
+                  alt="Cornulete de salon cu nucă"
                 />
               </div>
             </figure>
@@ -701,13 +759,13 @@
             <figure class="pricing-item">
               <img
                 src="media/fursecuri_800x800/covrigei_3.png"
-                alt="Platou cu covrigei fragezi"
+                alt="Covrigei fragezi sărați"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/fursecuri_800x800/covrigei_2.png"
-                  alt="Platou cu covrigei fragezi"
+                  alt="Covrigei fragezi sărați"
                 />
               </div>
             </figure>
@@ -739,12 +797,15 @@
 
           <div class="figure-container">
             <figure class="pricing-item">
-              <img src="media/taitei/taitei_2.png" alt="Taitei in punga" />
+              <img
+                src="media/taitei/taitei_2.png"
+                alt="Taiței cu ou ambalați"
+              />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/taitei/taitei_3.png"
-                  alt="Taitei in punga"
+                  alt="Taiței cu ou ambalați"
                 />
               </div>
             </figure>
@@ -757,20 +818,40 @@
           <div class="figure-container">
             <figure class="pricing-item">
               <img
-                src="media/cozonaci_800x800/cozonaci_1.png"
-                alt="Cozonaci pufosi"
+                src="media/prajituri_800x800/rulou_fructe_nuci_2.png"
+                alt="Baton din nuci și fructe uscate"
               />
               <div class="overlay">
                 <img
                   class="img-back"
-                  src="media/cozonaci_800x800/cozonaci_4.png"
-                  alt="Cozonaci pufosi"
+                  src="media/prajituri_800x800/rulou_fructe_nuci_1.png"
+                  alt="Baton din nuci și fructe uscate"
                 />
               </div>
             </figure>
             <div class="block"></div>
             <div class="text-block">
-              <p class="value">Cozonac dolofan <br />90 lei/kg</p>
+              <p class="value">Baton cu curmale și alune <br />100 lei/kg</p>
+            </div>
+          </div>
+
+          <div class="figure-container">
+            <figure class="pricing-item">
+              <img
+                src="media/cozonaci_800x800/cozonaci_1.png"
+                alt="Cozonaci pufoși"
+              />
+              <div class="overlay">
+                <img
+                  class="img-back"
+                  src="media/cozonaci_800x800/cozonaci_4.png"
+                  alt="Cozonaci pufoși"
+                />
+              </div>
+            </figure>
+            <div class="block"></div>
+            <div class="text-block">
+              <p class="value">Cozonac dolofan <br />100 lei/kg</p>
             </div>
           </div>
 
@@ -778,13 +859,13 @@
             <figure class="pricing-item">
               <img
                 src="media/torturi_800x800/tort_caramel_2.png"
-                alt="Tort cu mascarpone si caramel sarat"
+                alt="Tort cu mascarpone și caramel sărat"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/torturi_800x800/caramel_sarat.png"
-                  alt="Tort cu mascarpone si caramel sarat"
+                  alt="Tort cu mascarpone și caramel sărat"
                 />
               </div>
             </figure>
@@ -820,19 +901,19 @@
             <figure class="pricing-item">
               <img
                 src="media/torturi_800x800/tort_alune_1.png"
-                alt="Tort de ciocolata si alune de padure"
+                alt="Tort de ciocolată și alune de padure"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/torturi_800x800/tort_alune_5.png"
-                  alt="Tort de ciocolata si alune de padure"
+                  alt="Tort de ciocolată și alune de padure"
                 />
               </div>
             </figure>
             <div class="block"></div>
             <div class="text-block">
-              <p class="value">Tort ciocolată <br />130 lei/kg</p>
+              <p class="value">Tort ciocolată <br />150 lei/kg</p>
             </div>
           </div>
 
@@ -840,13 +921,13 @@
             <figure class="pricing-item">
               <img
                 src="media/torturi_800x800/tort_mascarpone_zmeura_4.png"
-                alt="Cozonaci pufosi"
+                alt="Cozonaci pufoși"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/torturi_800x800/tort_mascarpone_fistic_zmeura.png"
-                  alt="Cozonaci pufosi"
+                  alt="Cozonaci pufoși"
                 />
               </div>
             </figure>
@@ -862,13 +943,13 @@
             <figure class="pricing-item">
               <img
                 src="media/torturi_800x800/tort_dobos_2.png"
-                alt="Cozonaci pufosi"
+                alt="Cozonaci pufoși"
               />
               <div class="overlay">
                 <img
                   class="img-back"
                   src="media/torturi_800x800/tort_dobos_4.jpg"
-                  alt="Cozonaci pufosi"
+                  alt="Cozonaci pufoși"
                 />
               </div>
             </figure>
@@ -952,10 +1033,26 @@
           </div>
         </div>
       </footer>
-      <h3 class="signature">Pagină creată de Andreea Dan</h3>
+      <h3 class="signature">
+        Pagină creată de
+        <a
+          class="creator-link"
+          href="https://www.linkedin.com/in/andreea-maria-dan/"
+          target="_blank"
+          >Andreea Dan</a
+        >
+      </h3>
     </main>
 
-    <script src="script.js"></script>
-    <!-- --------- -->
+    <script src="script.js?v=1.2"></script>
+    <!-- Sections navigation - to remove #from link -->
+    <script>
+      function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
   </body>
 </html>
