@@ -1,6 +1,14 @@
 /*************************************/
 /* TOPNAV SECTION */
 /*************************************/
+@media (max-width: 47em) {
+  .orar {
+    font-size: 1.4rem;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+}
+
 @media (max-width: 40rem) {
   .topnav a:hover {
     color: #fff;
@@ -129,6 +137,10 @@
 }
 
 @media (max-width: 38em) {
+  .banner {
+    font-size: 1.5rem;
+  }
+
   .pricing {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
@@ -142,6 +154,14 @@
 }
 
 @media (max-width: 26em) {
+  .banner {
+    font-size: 1.2rem;
+  }
+
+  .fa-ice-cream {
+    padding: 0 5px;
+  }
+
   .text-block .value {
     font-size: 1.4rem;
   }
