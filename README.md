@@ -67,7 +67,7 @@ All images used on the site were taken on-location and are original, representin
 ## 💡 Author
 
 **Built with love** by Dan Andreea-Maria
-This project is the result of dedication, attention to detail and a lot of sweet. 🍩
+- This project is the result of dedication, attention to detail and a lot of sweet. 🍩
 
 ---
 
