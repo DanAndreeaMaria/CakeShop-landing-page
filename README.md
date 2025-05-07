@@ -2,7 +2,7 @@
 
 **Live site:** [www.sweet3generation.ro](https://www.sweet3generation.ro)
 
-Welcome to the official website repository for **Sweet 3 Generation - a family run pastry shop bringing joy through traditional and modern treats, now just a click away!
+Welcome to the official website repository for **Sweet 3 Generation** - a family run pastry shop bringing joy through traditional and modern treats, now just a click away!
 
 This website was lovingly built **from scratch** with attention to every detail, accessibility, performance and mobile-first approach to design.
 
