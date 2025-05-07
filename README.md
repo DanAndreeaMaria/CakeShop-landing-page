@@ -61,7 +61,7 @@ All images used on the site were taken on-location and are original, representin
 
 - **Visit us:** [www.sweet3generation.ro](https://www.sweet3generation.ro)
 - **Call us:** [Click here to call](tel:+40xxxxxxxxx)
-- **Follow us:** [Instagram](#) | [Facebook](#)
+- **Follow us:** [Instagram](https://www.instagram.com/sweet3gen/) | [Facebook](https://www.facebook.com/profile.php?id=61556925736035)
 
 ---
 
